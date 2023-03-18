@@ -362,22 +362,6 @@ function ui:Window(text,text2,text2Pos,toclose)
 
 	MakeDraggable(ClickFrame,MainSceen)
 
-	local NameReal = Instance.new("TextLabel")
-
-	NameReal.Name = "NameReal"
-	NameReal.Parent = MainSceen
-	NameReal.AnchorPoint = Vector2.new(0.5, 0.8)
-	NameReal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	NameReal.BackgroundTransparency = 1.000
-	NameReal.Position = UDim2.new(0.145454541, 0, 0.0610294119, 0)
-	NameReal.Size = UDim2.new(0, 136, 0, 34)
-	NameReal.Font = Enum.Font.GothamSemibold
-	NameReal.TextColor3 = Color3.fromRGB(255, 255, 255)
-	NameReal.TextSize = 18.000
-	NameReal.TextTransparency = 0.590
-	NameReal.Text = tostring(text)
-	NameReal.TextXAlignment = Enum.TextXAlignment.Left
-
 	local NameReal2 = Instance.new("TextLabel")
 
 	NameReal2.Name = "NameReal"
