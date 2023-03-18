@@ -320,7 +320,7 @@ function ui:Window(text,text2,text2Pos,toclose)
 	CloseBind = toclose or Enum.KeyCode.RightControl
 
 	if text2Pos == nil then
-		text2Pos = 0.30
+		text2Pos = 0.40
 	end
 
 	local fs = false
