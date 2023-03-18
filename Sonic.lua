@@ -320,7 +320,7 @@ function ui:Window(text,text2,text2Pos,toclose)
 	CloseBind = toclose or Enum.KeyCode.RightControl
 
 	if text2Pos == nil then
-		text2Pos = 0.35
+		text2Pos = 0.45
 	end
 
 	local fs = false
@@ -375,7 +375,7 @@ function ui:Window(text,text2,text2Pos,toclose)
 	NameReal2.BackgroundColor3 = _G.Color
 	NameReal2.BackgroundTransparency = 1.000
 	NameReal2.Text = tostring(text2)
-	NameReal2.Position = UDim2.new(text2Pos, 0, 0.0610294119, 0.4)
+	NameReal2.Position = UDim2.new(text2Pos, 0, 0.0610294119, 0)
 	NameReal2.Size = UDim2.new(0, 136, 0, 30)
 
 	local MainSceen2 = Instance.new("Frame")
