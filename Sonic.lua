@@ -315,7 +315,7 @@ end
 
 local ui = {}
 
-function ui:Winกนไ(text,text2,text2Pos,toclose)
+function ui:Window(text,text2,text2Pos,toclose)
 
 	CloseBind = toclose or Enum.KeyCode.RightControl
 
