@@ -131,7 +131,7 @@ function ttytPr()
 	local UICorner_8 = Instance.new("UICorner")
 	local TextLabel_4 = Instance.new("TextLabel")
 
-	CatGui.Name = "RoSonic Hub"
+	CatGui.Name = "Sonic"
 	CatGui.Parent = game.CoreGui
 	CatGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -245,7 +245,7 @@ coroutine.wrap(
 )()
 
 local PurpleCat = Instance.new("ScreenGui")
-PurpleCat.Name = "PurpleCat"
+PurpleCat.Name = "RoSonic Hub"
 PurpleCat.Parent = game.CoreGui
 PurpleCat.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -367,12 +367,12 @@ function ui:Window(text,text2,text2Pos,toclose)
 	NameReal2.Name = "NameReal"
 	NameReal2.Parent = MainSceen
 	NameReal2.Font = Enum.Font.GothamSemibold
-	NameReal2.TextColor3 = _G.Color
+	NameReal2.TextColor3 = Color3.fromRGB(255, 255, 255)
 	NameReal2.TextSize = 18.000
 	NameReal2.TextTransparency = 0
 	NameReal2.TextXAlignment = Enum.TextXAlignment.Left
 	NameReal2.AnchorPoint = Vector2.new(0.5, 0.8)
-	NameReal2.BackgroundColor3 = _G.Color
+	NameReal2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	NameReal2.BackgroundTransparency = 1.000
 	NameReal2.Text = tostring(text2)
 	NameReal2.Position = UDim2.new(text2Pos, 0, 0.0610294119, 0)
