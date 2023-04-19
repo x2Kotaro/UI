@@ -313,7 +313,7 @@ function library:CreateWindow(name, version, icon)
 
 			SearchBar.Name = "SearchBar"
 			SearchBar.Parent = Page
-			SearchBar.BackgroundColor3 = Color3.fromRGB(30, 30, 36)
+			SearchBar.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
 			SearchBar.Size = UDim2.new(1, 0, 0, 30)
 
 			UICorner_4.CornerRadius = UDim.new(0, 4)
@@ -361,7 +361,7 @@ function library:CreateWindow(name, version, icon)
 
 			SectionContainer.Name = "SectionContainer"
 			SectionContainer.Parent = Section
-			SectionContainer.BackgroundColor3 = Color3.fromRGB(30, 30, 36)
+			SectionContainer.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
 			SectionContainer.BorderSizePixel = 0
 			SectionContainer.ClipsDescendants = true
 			SectionContainer.Position = UDim2.new(0, 0, 1.25310734e-07, 0)
@@ -737,7 +737,7 @@ function library:CreateWindow(name, version, icon)
 
 				Tracker.Name = "Tracker"
 				Tracker.Parent = Slider
-				Tracker.BackgroundColor3 = Color3.fromRGB(30, 30, 36)
+				Tracker.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
 				Tracker.BorderSizePixel = 0
 				Tracker.Position = UDim2.new(0, 7, 1, -10)
 				Tracker.Size = UDim2.new(1, -14, 0, 2)
@@ -1523,7 +1523,7 @@ function library:CreateWindow(name, version, icon)
 
 				TitleBar.Name = "Title Bar"
 				TitleBar.Parent = Notification2
-				TitleBar.BackgroundColor3 = Color3.fromRGB(30, 30, 36)
+				TitleBar.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
 				TitleBar.Size = UDim2.new(0, 344, 0, 22)
 
 				UICorner_2.CornerRadius = UDim.new(0, 4)
@@ -1542,7 +1542,7 @@ function library:CreateWindow(name, version, icon)
 
 				Corners.Name = "Corners"
 				Corners.Parent = TitleBar
-				Corners.BackgroundColor3 = Color3.fromRGB(30, 30, 36)
+				Corners.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
 				Corners.Position = UDim2.new(0, 0, 0.799998879, 0)
 				Corners.Size = UDim2.new(0, 344, 0, 6)
 
@@ -1564,7 +1564,7 @@ function library:CreateWindow(name, version, icon)
 
 				Negative.Name = "Negative"
 				Negative.Parent = Notification2
-				Negative.BackgroundColor3 = Color3.fromRGB(30, 30, 36)
+				Negative.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
 				Negative.Position = UDim2.new(1.01569772, 0, 0.5625, 0)
 				Negative.Size = UDim2.new(0, 33, 0, 28)
 
@@ -1607,7 +1607,7 @@ function library:CreateWindow(name, version, icon)
 
 				Positive.Name = "Positive"
 				Positive.Parent = Notification2
-				Positive.BackgroundColor3 = Color3.fromRGB(30, 30, 36)
+				Positive.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
 				Positive.Position = UDim2.new(1.01744187, 0, 0, 0)
 				Positive.Size = UDim2.new(0, 33, 0, 28)
 
