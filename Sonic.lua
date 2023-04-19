@@ -37,7 +37,7 @@ function library:CreateWindow(name, version, icon)
 
 	Window.Name = "Window"
 	Window.Parent = MyGui
-	Window.BackgroundColor3 = Color3.fromRGB(40, 40, 48)
+	Window.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
 	Window.Position = UDim2.new(0.5, -300, 0.600000024, -200)
 	Window.Size = UDim2.new(0, 0, 0, 0)
 	Window.ClipsDescendants = true
@@ -216,7 +216,7 @@ function library:CreateWindow(name, version, icon)
 
 		Tabs.Name = "Tabs"
 		Tabs.Parent = Window
-		Tabs.BackgroundColor3 = Color3.fromRGB(40, 40, 48)
+		Tabs.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
 		Tabs.Position = UDim2.new(0, 5, 0, 36)
 		Tabs.Size = UDim2.new(0, 140, 1, -41)
 
@@ -287,7 +287,7 @@ function library:CreateWindow(name, version, icon)
 			Page.Name = "Page"
 			Page.Parent = Window
 			Page.Active = true
-			Page.BackgroundColor3 = Color3.fromRGB(40, 40, 48)
+			Page.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
 			Page.BorderColor3 = Color3.fromRGB(27, 42, 53)
 			Page.BorderSizePixel = 0
 			Page.Position = UDim2.new(0, 150, 0, 36)
@@ -554,7 +554,7 @@ function library:CreateWindow(name, version, icon)
 
 				Button.Name = "Button"
 				Button.Parent = SectionContainer
-				Button.BackgroundColor3 = Color3.fromRGB(40, 40, 48)
+				Button.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
 				Button.Size = UDim2.new(1, 0, 0, 40)
 
 				UICorner.CornerRadius = UDim.new(0, 4)
@@ -717,7 +717,7 @@ function library:CreateWindow(name, version, icon)
 
 				Slider.Name = "Slider"
 				Slider.Parent = SectionContainer
-				Slider.BackgroundColor3 = Color3.fromRGB(40, 40, 48)
+				Slider.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
 				Slider.Size = UDim2.new(1, 0, 0, 40)
 
 				UICorner_17.CornerRadius = UDim.new(0, 4)
@@ -901,7 +901,7 @@ function library:CreateWindow(name, version, icon)
 
 				Container_3.Name = "Container"
 				Container_3.Parent = TextBox
-				Container_3.BackgroundColor3 = Color3.fromRGB(40, 40, 48)
+				Container_3.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
 				Container_3.BorderSizePixel = 0
 				Container_3.Size = UDim2.new(1, 0, 1, -1)
 				Container_3.ZIndex = 2
@@ -976,7 +976,7 @@ function library:CreateWindow(name, version, icon)
 
 				Container_2.Name = "Container"
 				Container_2.Parent = Keybind
-				Container_2.BackgroundColor3 = Color3.fromRGB(40, 40, 48)
+				Container_2.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
 				Container_2.BorderSizePixel = 0
 				Container_2.Size = UDim2.new(1, 0, 1, -1)
 				Container_2.ZIndex = 2
@@ -1092,7 +1092,7 @@ function library:CreateWindow(name, version, icon)
 
 				Toggle.Name = "Toggle"
 				Toggle.Parent = SectionContainer
-				Toggle.BackgroundColor3 = Color3.fromRGB(40, 40, 48)
+				Toggle.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
 				Toggle.Size = UDim2.new(1, 0, 0, 40)
 
 				UICorner.CornerRadius = UDim.new(0, 4)
@@ -1205,7 +1205,7 @@ function library:CreateWindow(name, version, icon)
 
 				ColorPicker.Name = "ColorPicker"
 				ColorPicker.Parent = SectionContainer
-				ColorPicker.BackgroundColor3 = Color3.fromRGB(40, 40, 48)
+				ColorPicker.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
 				ColorPicker.Size = UDim2.new(1, 0, 0, 40)
 
 				UICorner.CornerRadius = UDim.new(0, 4)
