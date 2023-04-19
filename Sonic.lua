@@ -288,7 +288,7 @@ function library:CreateWindow(name, version, icon)
 			Page.Parent = Window
 			Page.Active = true
 			Page.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
-			Page.BorderColor3 = Color3.fromRGB(27, 42, 53)
+			Page.BorderColor3 = Color3.fromRGB(49, 49, 59)
 			Page.BorderSizePixel = 0
 			Page.Position = UDim2.new(0, 150, 0, 36)
 			Page.Size = UDim2.new(1, -155, 1, -41)
@@ -810,7 +810,7 @@ function library:CreateWindow(name, version, icon)
 				ValueText.Parent = Value
 				ValueText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				ValueText.BackgroundTransparency = 1.000
-				ValueText.BorderColor3 = Color3.fromRGB(27, 42, 53)
+				ValueText.BorderColor3 = Color3.fromRGB(49, 49, 59)
 				ValueText.Size = UDim2.new(1, 0, 1, 0)
 				ValueText.Font = Enum.Font.Gotham
 				ValueText.Text = min
@@ -1304,7 +1304,7 @@ function library:CreateWindow(name, version, icon)
 				ValueText2.Parent = Value2
 				ValueText2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				ValueText2.BackgroundTransparency = 1.000
-				ValueText2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+				ValueText2.BorderColor3 = Color3.fromRGB(49, 49, 59)
 				ValueText2.ClipsDescendants = true
 				ValueText2.Size = UDim2.new(1, 0, 1, 0)
 				ValueText2.Font = Enum.Font.Gotham
@@ -1533,7 +1533,7 @@ function library:CreateWindow(name, version, icon)
 				Title.Parent = TitleBar
 				Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				Title.BackgroundTransparency = 1.000
-				Title.BorderColor3 = Color3.fromRGB(27, 42, 53)
+				Title.BorderColor3 = Color3.fromRGB(49, 49, 59)
 				Title.Size = UDim2.new(0, 342, 0, 22)
 				Title.Font = Enum.Font.SourceSansSemibold
 				Title.Text = Name
