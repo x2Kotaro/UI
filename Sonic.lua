@@ -37,7 +37,7 @@ function library:CreateWindow(name, version, icon)
 
 	Window.Name = "Window"
 	Window.Parent = MyGui
-	Window.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
+	Window.BackgroundColor3 = Color3.fromRGB(40, 40, 48)
 	Window.Position = UDim2.new(0.5, -300, 0.600000024, -200)
 	Window.Size = UDim2.new(0, 0, 0, 0)
 	Window.ClipsDescendants = true
