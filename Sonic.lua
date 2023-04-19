@@ -33,7 +33,7 @@ function library:CreateWindow(name, version, icon)
 	ProtectInstance(MyGui)
 	ProtectInstance(Window)
 
-	MyGui.Name = RandomString
+	MyGui.Name = "Venuz Hub.--Kuy"
 	MyGui.Parent = cloneref(game:GetService("CoreGui"))
 	MyGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
