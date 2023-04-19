@@ -11,12 +11,10 @@ local TS = game:GetService("TweenService")
 function library:CreateWindow(name, version, icon)
 	name = name or "Name"
 	version = version or "Version"
-	icon = icon or math.random()
 	local MyGui = Instance.new("ScreenGui")
 	local Window = Instance.new("Frame")
 	local UICorner = Instance.new("UICorner")
 	local TitleBar = Instance.new("Frame")
-	local Icon = Instance.new("ImageLabel")
 	local MainTitle = Instance.new("TextLabel")
 	local TitleUnderline = Instance.new("Frame")
 	local UIGradient = Instance.new("UIGradient")
@@ -53,20 +51,11 @@ function library:CreateWindow(name, version, icon)
 	TitleBar.BackgroundTransparency = 1.000
 	TitleBar.Size = UDim2.new(1, 0, 0, 30)
 
-	Icon.Name = "Icon"
-	Icon.Parent = TitleBar
-	Icon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	Icon.BackgroundTransparency = 1.000
-	Icon.Position = UDim2.new(0, 6, 0, 6)
-	Icon.Size = UDim2.new(0, 18, 0, 18)
-	Icon.Image = "rbxassetid://13186089434"
-	Icon.ImageColor3 = Color3.fromRGB(255, 60, 60)
-
 	MainTitle.Name = "Title"
 	MainTitle.Parent = TitleBar
 	MainTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	MainTitle.BackgroundTransparency = 1.000
-	MainTitle.Position = UDim2.new(0, 30, 0, 1)
+	MainTitle.Position = UDim2.new(0, 0, 0, 1)
 	MainTitle.Size = UDim2.new(1, -30, 1, 0)
 	MainTitle.Font = Enum.Font.Gotham
 	MainTitle.Text = name.." | "..version --"Title | Version"
