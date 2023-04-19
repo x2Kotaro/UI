@@ -11,7 +11,7 @@ local TS = game:GetService("TweenService")
 function library:CreateWindow(name, version, icon)
 	name = name or "Name"
 	version = version or "Version"
-	icon = icon
+	icon = icon or math.random()
 	local MyGui = Instance.new("ScreenGui")
 	local Window = Instance.new("Frame")
 	local UICorner = Instance.new("UICorner")
@@ -59,7 +59,7 @@ function library:CreateWindow(name, version, icon)
 	Icon.BackgroundTransparency = 1.000
 	Icon.Position = UDim2.new(0, 6, 0, 6)
 	Icon.Size = UDim2.new(0, 18, 0, 18)
-	Icon.Image = "rbxassetid://"..icon
+	Icon.Image = "rbxassetid://13186089434"
 	Icon.ImageColor3 = Color3.fromRGB(255, 60, 60)
 
 	MainTitle.Name = "Title"
