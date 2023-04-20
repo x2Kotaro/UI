@@ -8,7 +8,7 @@ local request = request or http_request or (identifyexecutor() == "Synapse X" an
 loadstring(request({Url="https://raw.githubusercontent.com/cypherdh/Script-Library/main/InstanceProtect",Method="GET"}).Body)()
 local UIS = game:GetService("UserInputService")
 local TS = game:GetService("TweenService")
-function library:CreateWindow(name, version, icon)
+function library:CreateWindow(name, version)
 	name = name or "Name"
 	version = version or "Version"
 	local MyGui = Instance.new("ScreenGui")
@@ -31,7 +31,7 @@ function library:CreateWindow(name, version, icon)
 	ProtectInstance(MyGui)
 	ProtectInstance(Window)
 
-	MyGui.Name = "Venuz Hub.--Kuy"
+	MyGui.Name = "     "
 	MyGui.Parent = cloneref(game:GetService("CoreGui"))
 	MyGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
@@ -55,7 +55,7 @@ function library:CreateWindow(name, version, icon)
 	MainTitle.Parent = TitleBar
 	MainTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	MainTitle.BackgroundTransparency = 1.000
-	MainTitle.Position = UDim2.new(0, 4, 0, 1)
+	MainTitle.Position = UDim2.new(0, 3, 0, 1)
 	MainTitle.Size = UDim2.new(1, -30, 1, 0)
 	MainTitle.Font = Enum.Font.Gotham
 	MainTitle.Text = name.." | "..version --"Title | Version"
@@ -216,7 +216,7 @@ function library:CreateWindow(name, version, icon)
 
 		Tabs.Name = "Tabs"
 		Tabs.Parent = Window
-		Tabs.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
+		Tabs.BackgroundColor3 = Color3.fromRGB(40, 40, 48)
 		Tabs.Position = UDim2.new(0, 5, 0, 36)
 		Tabs.Size = UDim2.new(0, 140, 1, -41)
 
@@ -287,8 +287,8 @@ function library:CreateWindow(name, version, icon)
 			Page.Name = "Page"
 			Page.Parent = Window
 			Page.Active = true
-			Page.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
-			Page.BorderColor3 = Color3.fromRGB(49, 49, 59)
+			Page.BackgroundColor3 = Color3.fromRGB(40, 40, 48)
+			Page.BorderColor3 = Color3.fromRGB(27, 42, 53)
 			Page.BorderSizePixel = 0
 			Page.Position = UDim2.new(0, 150, 0, 36)
 			Page.Size = UDim2.new(1, -155, 1, -41)
@@ -313,7 +313,7 @@ function library:CreateWindow(name, version, icon)
 
 			SearchBar.Name = "SearchBar"
 			SearchBar.Parent = Page
-			SearchBar.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
+			SearchBar.BackgroundColor3 = Color3.fromRGB(30, 30, 36)
 			SearchBar.Size = UDim2.new(1, 0, 0, 30)
 
 			UICorner_4.CornerRadius = UDim.new(0, 4)
@@ -361,7 +361,7 @@ function library:CreateWindow(name, version, icon)
 
 			SectionContainer.Name = "SectionContainer"
 			SectionContainer.Parent = Section
-			SectionContainer.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
+			SectionContainer.BackgroundColor3 = Color3.fromRGB(30, 30, 36)
 			SectionContainer.BorderSizePixel = 0
 			SectionContainer.ClipsDescendants = true
 			SectionContainer.Position = UDim2.new(0, 0, 1.25310734e-07, 0)
@@ -554,7 +554,7 @@ function library:CreateWindow(name, version, icon)
 
 				Button.Name = "Button"
 				Button.Parent = SectionContainer
-				Button.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
+				Button.BackgroundColor3 = Color3.fromRGB(40, 40, 48)
 				Button.Size = UDim2.new(1, 0, 0, 40)
 
 				UICorner.CornerRadius = UDim.new(0, 4)
@@ -612,7 +612,7 @@ function library:CreateWindow(name, version, icon)
 						Sample.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 						Sample.BackgroundTransparency = 1.000
 						Sample.Image = "http://www.roblox.com/asset/?id=4560909609"
-						Sample.ImageColor3 = Color3.fromRGB(255,60,60)
+						Sample.ImageColor3 = Color3.fromRGB(255, 60, 60)
 						Sample.ImageTransparency = 0.600
 
 						local btn = Caller
@@ -717,7 +717,7 @@ function library:CreateWindow(name, version, icon)
 
 				Slider.Name = "Slider"
 				Slider.Parent = SectionContainer
-				Slider.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
+				Slider.BackgroundColor3 = Color3.fromRGB(40, 40, 48)
 				Slider.Size = UDim2.new(1, 0, 0, 40)
 
 				UICorner_17.CornerRadius = UDim.new(0, 4)
@@ -737,14 +737,14 @@ function library:CreateWindow(name, version, icon)
 
 				Tracker.Name = "Tracker"
 				Tracker.Parent = Slider
-				Tracker.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
+				Tracker.BackgroundColor3 = Color3.fromRGB(30, 30, 36)
 				Tracker.BorderSizePixel = 0
 				Tracker.Position = UDim2.new(0, 7, 1, -10)
 				Tracker.Size = UDim2.new(1, -14, 0, 2)
 
 				Indicator_3.Name = "Indicator"
 				Indicator_3.Parent = Tracker
-				Indicator_3.BackgroundColor3 = Color3.fromRGB(255,60,60)
+				Indicator_3.BackgroundColor3 = Color3.fromRGB(255, 60, 60)
 				Indicator_3.BorderSizePixel = 0
 				Indicator_3.Size = UDim2.new(0, 0, 1, 0)
 
@@ -756,13 +756,13 @@ function library:CreateWindow(name, version, icon)
 				Shadow_1.Selectable = true
 				Shadow_1.Size = UDim2.new(1, 30, 1, 30)
 				Shadow_1.Image = "http://www.roblox.com/asset/?id=5761504593"
-				Shadow_1.ImageColor3 = Color3.fromRGB(255,60,60)
+				Shadow_1.ImageColor3 = Color3.fromRGB(255, 60, 60)
 				Shadow_1.ImageTransparency = 1
 				Shadow_1.ScaleType = Enum.ScaleType.Slice
 				Shadow_1.SliceCenter = Rect.new(17, 17, 283, 283)
 
 				TextButton_2.Parent = Indicator_3
-				TextButton_2.BackgroundColor3 = Color3.fromRGB(255,60,60)
+				TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 60, 60)
 				TextButton_2.Position = UDim2.new(1, -4, 0.5, -4)
 				TextButton_2.Size = UDim2.new(0, 8, 0, 8)
 				TextButton_2.Font = Enum.Font.SourceSans
@@ -778,7 +778,7 @@ function library:CreateWindow(name, version, icon)
 				Shadow_2.Selectable = true
 				Shadow_2.Size = UDim2.new(1, 30, 1, 30)
 				Shadow_2.Image = "http://www.roblox.com/asset/?id=5761504593"
-				Shadow_2.ImageColor3 = Color3.fromRGB(255,60,60)
+				Shadow_2.ImageColor3 = Color3.fromRGB(255, 60, 60)
 				Shadow_2.ImageTransparency = 1
 				Shadow_2.ScaleType = Enum.ScaleType.Slice
 				Shadow_2.SliceCenter = Rect.new(17, 17, 283, 283)
@@ -788,7 +788,7 @@ function library:CreateWindow(name, version, icon)
 
 				Fade.Name = "Fade"
 				Fade.Parent = TextButton_2
-				Fade.BackgroundColor3 = Color3.fromRGB(255,60,60)
+				Fade.BackgroundColor3 = Color3.fromRGB(255, 60, 60)
 				Fade.BackgroundTransparency = 1.000
 				Fade.Position = UDim2.new(-0.5, 0, -0.5, 0)
 				Fade.Size = UDim2.new(2, 0, 2, 0)
@@ -810,7 +810,7 @@ function library:CreateWindow(name, version, icon)
 				ValueText.Parent = Value
 				ValueText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				ValueText.BackgroundTransparency = 1.000
-				ValueText.BorderColor3 = Color3.fromRGB(49, 49, 59)
+				ValueText.BorderColor3 = Color3.fromRGB(27, 42, 53)
 				ValueText.Size = UDim2.new(1, 0, 1, 0)
 				ValueText.Font = Enum.Font.Gotham
 				ValueText.Text = min
@@ -901,7 +901,7 @@ function library:CreateWindow(name, version, icon)
 
 				Container_3.Name = "Container"
 				Container_3.Parent = TextBox
-				Container_3.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
+				Container_3.BackgroundColor3 = Color3.fromRGB(40, 40, 48)
 				Container_3.BorderSizePixel = 0
 				Container_3.Size = UDim2.new(1, 0, 1, -1)
 				Container_3.ZIndex = 2
@@ -976,7 +976,7 @@ function library:CreateWindow(name, version, icon)
 
 				Container_2.Name = "Container"
 				Container_2.Parent = Keybind
-				Container_2.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
+				Container_2.BackgroundColor3 = Color3.fromRGB(40, 40, 48)
 				Container_2.BorderSizePixel = 0
 				Container_2.Size = UDim2.new(1, 0, 1, -1)
 				Container_2.ZIndex = 2
@@ -1092,7 +1092,7 @@ function library:CreateWindow(name, version, icon)
 
 				Toggle.Name = "Toggle"
 				Toggle.Parent = SectionContainer
-				Toggle.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
+				Toggle.BackgroundColor3 = Color3.fromRGB(40, 40, 48)
 				Toggle.Size = UDim2.new(1, 0, 0, 40)
 
 				UICorner.CornerRadius = UDim.new(0, 4)
@@ -1205,7 +1205,7 @@ function library:CreateWindow(name, version, icon)
 
 				ColorPicker.Name = "ColorPicker"
 				ColorPicker.Parent = SectionContainer
-				ColorPicker.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
+				ColorPicker.BackgroundColor3 = Color3.fromRGB(40, 40, 48)
 				ColorPicker.Size = UDim2.new(1, 0, 0, 40)
 
 				UICorner.CornerRadius = UDim.new(0, 4)
@@ -1304,7 +1304,7 @@ function library:CreateWindow(name, version, icon)
 				ValueText2.Parent = Value2
 				ValueText2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				ValueText2.BackgroundTransparency = 1.000
-				ValueText2.BorderColor3 = Color3.fromRGB(49, 49, 59)
+				ValueText2.BorderColor3 = Color3.fromRGB(27, 42, 53)
 				ValueText2.ClipsDescendants = true
 				ValueText2.Size = UDim2.new(1, 0, 1, 0)
 				ValueText2.Font = Enum.Font.Gotham
@@ -1523,7 +1523,7 @@ function library:CreateWindow(name, version, icon)
 
 				TitleBar.Name = "Title Bar"
 				TitleBar.Parent = Notification2
-				TitleBar.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
+				TitleBar.BackgroundColor3 = Color3.fromRGB(30, 30, 36)
 				TitleBar.Size = UDim2.new(0, 344, 0, 22)
 
 				UICorner_2.CornerRadius = UDim.new(0, 4)
@@ -1533,7 +1533,7 @@ function library:CreateWindow(name, version, icon)
 				Title.Parent = TitleBar
 				Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 				Title.BackgroundTransparency = 1.000
-				Title.BorderColor3 = Color3.fromRGB(49, 49, 59)
+				Title.BorderColor3 = Color3.fromRGB(27, 42, 53)
 				Title.Size = UDim2.new(0, 342, 0, 22)
 				Title.Font = Enum.Font.SourceSansSemibold
 				Title.Text = Name
@@ -1542,7 +1542,7 @@ function library:CreateWindow(name, version, icon)
 
 				Corners.Name = "Corners"
 				Corners.Parent = TitleBar
-				Corners.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
+				Corners.BackgroundColor3 = Color3.fromRGB(30, 30, 36)
 				Corners.Position = UDim2.new(0, 0, 0.799998879, 0)
 				Corners.Size = UDim2.new(0, 344, 0, 6)
 
@@ -1564,7 +1564,7 @@ function library:CreateWindow(name, version, icon)
 
 				Negative.Name = "Negative"
 				Negative.Parent = Notification2
-				Negative.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
+				Negative.BackgroundColor3 = Color3.fromRGB(30, 30, 36)
 				Negative.Position = UDim2.new(1.01569772, 0, 0.5625, 0)
 				Negative.Size = UDim2.new(0, 33, 0, 28)
 
@@ -1607,7 +1607,7 @@ function library:CreateWindow(name, version, icon)
 
 				Positive.Name = "Positive"
 				Positive.Parent = Notification2
-				Positive.BackgroundColor3 = Color3.fromRGB(49, 49, 59)
+				Positive.BackgroundColor3 = Color3.fromRGB(30, 30, 36)
 				Positive.Position = UDim2.new(1.01744187, 0, 0, 0)
 				Positive.Size = UDim2.new(0, 33, 0, 28)
 
