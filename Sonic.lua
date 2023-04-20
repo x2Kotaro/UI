@@ -147,7 +147,7 @@ function CFAHub:CreateWindow(title, gameName, intro)
         ScrollBar = Color3.fromRGB(149, 149, 149),
         NotiBackground = Color3.fromRGB(0, 0, 0),
         Glow = Color3.fromRGB(79, 195, 247),
-        Logo = "rbxassetid://13186089434"
+        Logo = "rbxassetid://"
     }
 
     table.insert(CFAHub, title)
@@ -263,7 +263,7 @@ function CFAHub:CreateWindow(title, gameName, intro)
         Header.AnchorPoint = Vector2.new(0.5, 0)
         Header.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         Header.BackgroundTransparency = 1.000
-        Header.Position = UDim2.new(0.400000006, 0, 0.100000069, 0)
+        Header.Position = UDim2.new(0.200000006, 0, 0.100000069, 0)
         Header.Size = UDim2.new(0.75, 0, 0, 20)
         Header.Font = Enum.Font.GothamBold
         Header.Text = header
@@ -277,7 +277,7 @@ function CFAHub:CreateWindow(title, gameName, intro)
         Message.AnchorPoint = Vector2.new(0.5, 0)
         Message.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         Message.BackgroundTransparency = 1.000
-        Message.Position = UDim2.new(0.400000006, 0, 0.312000006, 0)
+        Message.Position = UDim2.new(0.400000006, 0, 0.212000006, 0)
         Message.Size = UDim2.new(0.75, 0, 0.5, 0)
         Message.Font = Enum.Font.GothamSemibold
         Message.Text = message
