@@ -124,7 +124,7 @@ function CFAHub:DraggingEnabled(frame, parent)
     end)
 end
 
-local GuiName = "VenuzHubFree"
+local GuiName = "     "
 
 function CFAHub:CreateWindow(title, gameName, intro)
     title = title or "<font color=\"#1CB2F5\">CFA Hub Premium</font>"
@@ -147,7 +147,7 @@ function CFAHub:CreateWindow(title, gameName, intro)
         ScrollBar = Color3.fromRGB(149, 149, 149),
         NotiBackground = Color3.fromRGB(0, 0, 0),
         Glow = Color3.fromRGB(79, 195, 247),
-        Logo = "rbxassetid://11720173422"
+        Logo = "rbxassetid://"
     }
 
     table.insert(CFAHub, title)
@@ -263,7 +263,7 @@ function CFAHub:CreateWindow(title, gameName, intro)
         Header.AnchorPoint = Vector2.new(0.5, 0)
         Header.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         Header.BackgroundTransparency = 1.000
-        Header.Position = UDim2.new(0.5, 0, 0.6, 0)
+        Header.Position = UDim2.new(0.400000006, 0, 0.100000069, 0)
         Header.Size = UDim2.new(0.75, 0, 0, 20)
         Header.Font = Enum.Font.GothamBold
         Header.Text = header
@@ -277,7 +277,7 @@ function CFAHub:CreateWindow(title, gameName, intro)
         Message.AnchorPoint = Vector2.new(0.5, 0)
         Message.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
         Message.BackgroundTransparency = 1.000
-        Message.Position = UDim2.new(0.5, 0, 0.9, 0)
+        Message.Position = UDim2.new(0.400000006, 0, 0.312000006, 0)
         Message.Size = UDim2.new(0.75, 0, 0.5, 0)
         Message.Font = Enum.Font.GothamSemibold
         Message.Text = message
@@ -573,7 +573,7 @@ function CFAHub:CreateWindow(title, gameName, intro)
     Title.Parent = Header
     Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     Title.BackgroundTransparency = 1.000
-    Title.Position = UDim2.new(0.0579494797, 0, 0, 0)
+    Title.Position = UDim2.new(0.0299999993, 0, 0.5, 0)
     Title.Size = UDim2.new(0, 625, 0, 29)
     Title.ZIndex = 2
     Title.Font = Enum.Font.SourceSansSemibold
