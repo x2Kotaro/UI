@@ -573,7 +573,7 @@ function CFAHub:CreateWindow(title, gameName, intro)
     Title.Parent = Header
     Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     Title.BackgroundTransparency = 1.000
-    Title.Position = UDim2.new(0.0979494797)
+    Title.Position = UDim2.new(0.0179494797)
     Title.Size = UDim2.new(0, 625, 0, 29)
     Title.ZIndex = 2
     Title.Font = Enum.Font.SourceSansSemibold
