@@ -975,7 +975,7 @@
 					library.popup:Close()
 				end
 				option.arrow.Rotation = -90
-				option.' = true
+				option.open = true
 				option.holder.Visible = true
 				local pos = option.main.AbsolutePosition
 				option.holder.Position = UDim2.new(0, pos.X + 6, 0, pos.Y + ((option.text == "nil" and not option.sub) and 66 or 84))
