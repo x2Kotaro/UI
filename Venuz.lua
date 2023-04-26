@@ -2439,8 +2439,6 @@
 	function library:Close()
 		self.open = not self.open
 		if self.open then
-			inputService.MouseIconEnabled = false
-		else
 			inputService.MouseIconEnabled = self.mousestate
 		end
 		if self.main then
