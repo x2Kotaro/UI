@@ -70,7 +70,7 @@
 	end
 
 	function library:Unload()
-		inputService.MouseIconEnabled = false
+		inputService.MouseIconEnabled = self.mousestate
 		for _, c in next, self.connections do
 			c:Disconnect()
 		end
@@ -2439,7 +2439,7 @@
 	function library:Close()
 		self.open = not self.open
 		if self.open then
-			inputService.MouseIconEnabled = false
+			inputService.MouseIconEnabled = self.mousestate
 		end
 		if self.main then
 			if self.popup then
