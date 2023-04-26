@@ -2467,7 +2467,7 @@
 
 		self.main = self:Create("ImageButton", {
 			AutoButtonColor = false,
-			Position = UDim2.new(0, 100, 0, 46),
+			Position = UDim2.new(0, 450, 0, 46),
 			Size = UDim2.new(0, 500, 0, 600),
 			BackgroundColor3 = Color3.fromRGB(20, 20, 20),
 			BorderColor3 = Color3.new(),
