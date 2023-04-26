@@ -11,7 +11,7 @@
 		getgenv().library:Unload()
 	end
 
-	local library = {design = getgenv().design == "kali" and "kali" or "Venuz Hub", tabs = {}, draggable = true, flags = {}, title = "Venuz Hub", open = false, mousestate = inputService.MouseIconEnabled, popup = nil, instances = {}, connections = {}, options = {}, notifications = {}, tabSize = 0, theme = {}, foldername = "Venuz Hub", fileext = ".uw"}
+	local library = {design = getgenv().design == "kali" and "kali" or "Venuz Hub", tabs = {}, draggable = true, flags = {}, title = "Venuz Hub", open = false, mousestate = inputService.MouseIconEnabled, popup = nil, instances = {}, connections = {}, options = {}, notifications = {}, tabSize = 0, theme = {}, foldername = "Venuz Hub", fileext = ".json"}
 	getgenv().library = library
 
 	--Locals
@@ -2439,6 +2439,8 @@
 	function library:Close()
 		self.open = not self.open
 		if self.open then
+			inputService.MouseIconEnabled = false
+		else
 			inputService.MouseIconEnabled = self.mousestate
 		end
 		if self.main then
@@ -2694,13 +2696,13 @@
 	library.SettingsMain = library.SettingsColumn:AddSection"Main"
 	library.SettingsMain:AddButton({text = "Unload Cheat", nomouse = true, callback = function()
 		library:Unload()
-		getgenv().uwuware = nil
+		getgenv().Venuz = nil
 	end})
 	library.SettingsMain:AddBind({text = "Panic Key", callback = library.options["Unload Cheat"].callback})
 
 	library.SettingsMenu = library.SettingsColumn:AddSection"Menu"
 	library.SettingsMenu:AddBind({text = "Open / Close", flag = "UI Toggle", nomouse = true, key = "RightControl", callback = function() library:Close() end})
-	library.SettingsMenu:AddColor({text = "Accent Color", flag = "Menu Accent Color", color = Color3.fromRGB(255, 65, 65), callback = function(Color)
+	library.SettingsMenu:AddColor({text = "Accent Color", flag = "Menu Accent Color", color = Color3.fromRGB(29, 222, 229), callback = function(Color)
 		if library.currentTab then
 			library.currentTab.button.TextColor3 = Color
 		end
@@ -2831,7 +2833,7 @@
 			Position = UDim2.new(0, 4, 0, 0),
 			Size = UDim2.new(0, 70, 0, 16),
 			BackgroundTransparency = 1,
-			Text = "uwuware",
+			Text = "Venuz",
 			Font = Enum.Font.Gotham,
 			TextColor3 = Color3.fromRGB(255, 65, 65),
 			TextSize = 16,
