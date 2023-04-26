@@ -70,7 +70,7 @@
 	end
 
 	function library:Unload()
-		inputService.MouseIconEnabled = false
+		inputService.MouseIconEnabled = self.mousestate
 		for _, c in next, self.connections do
 			c:Disconnect()
 		end
@@ -2439,7 +2439,7 @@
 	function library:Close()
 		self.open = not self.open
 		if self.open then
-			inputService.MouseIconEnabled = false
+			inputService.MouseIconEnabled = self.mousestate
 		end
 		if self.main then
 			if self.popup then
@@ -2648,16 +2648,6 @@
 			if not self.open then return end
 			
 			if input.UserInputType.Name == "MouseMovement" then
-				if self.cursor then
-					local mouse = inputService:GetMouseLocation()
-					local MousePos = Vector2.new(mouse.X, mouse.Y)
-					self.cursor.PointA = MousePos
-					self.cursor.PointB = MousePos + Vector2.new(12, 12)
-					self.cursor.PointC = MousePos + Vector2.new(12, 12)
-					self.cursor1.PointA = MousePos
-					self.cursor1.PointB = MousePos + Vector2.new(11, 11)
-					self.cursor1.PointC = MousePos + Vector2.new(11, 11)
-				end
 				if self.slider then
 					self.slider:SetValue(self.slider.min + ((input.Position.X - self.slider.slider.AbsolutePosition.X) / self.slider.slider.AbsoluteSize.X) * (self.slider.max - self.slider.min))
 				end
